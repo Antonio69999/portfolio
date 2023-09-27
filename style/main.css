@@ -55,6 +55,41 @@ body {
     color: #f45f3c;
 }
 
+.menu-toggle {
+    display: none; /* Hide the toggle button by default on larger screens */
+    cursor: pointer;
+    padding: 10px;
+    background-color: #e6e5e0;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show the toggle button on smaller screens */
+    }
+
+    .sidebar {
+        display: none; /* Hide the sidebar by default on smaller screens */
+    }
+
+    /* Styles to show the sidebar when the toggle button is clicked */
+    .sidebar.show {
+        display: block;
+        width: 100%;
+        max-width: none;
+    }
+}
+
 .content {
     margin-right: 280px;
    

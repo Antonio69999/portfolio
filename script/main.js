@@ -15,3 +15,10 @@ $(document).ready(function() {
         $(this).find('.menu-content').slideToggle();
     });
 });
+
+$(document).ready(function () {
+    // Toggle the sidebar when the menu button is clicked
+    $('.menu-toggle').click(function () {
+        $('.sidebar').toggleClass('show');
+    });
+});
