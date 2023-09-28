@@ -1,3 +1,7 @@
+:root {
+    --orange :  #f45f3c;
+}
+
 @font-face {
     font-family: font;
     src: url(../assets/fonts/ELEGANT\ TYPEWRITER\ Regular.ttf);
@@ -7,6 +11,7 @@ body {
     font-family: font;
     scroll-behavior: smooth;
     background-color: #e6e5e0;
+    font-size: small !important;
 }
 
 #navbar {
@@ -14,11 +19,11 @@ body {
 }
 
 #selection {
-    color: #f45f3c;
+    color: var(--orange);
 }
 
 #card_title {
-    color: #f45f3c;
+    color: var(--orange);
 }
 
 /* Aside */
@@ -26,15 +31,15 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 330px; /* Ajustez la largeur selon vos besoins */
-    background-color: #e6e5e0; /* Couleur de fond de la barre latérale */
-    padding: 20px; /* Espacement interne */
+    width: 330px;
+    background-color: #e6e5e0; 
+    padding: 20px;
+    transition: width 0.3 ease;
 }
 
-/* Styles pour chaque menu déroulant */
 .menu-item {
     margin-bottom: 20px;
-    cursor: pointer; /* Permet de montrer qu'il s'agit d'un élément cliquable */
+    cursor: pointer;
 }
 
 .menu-item h3 {
@@ -43,7 +48,7 @@ body {
 }
 
 .menu-content {
-    display: none; /* Masquer le contenu par défaut */
+    display: none; 
 }
 
 .menu-content a {
@@ -52,11 +57,18 @@ body {
 }
 
 .menu-content a:hover {
-    color: #f45f3c;
+    color: var(--orange);
+}
+
+.menu-title {
+    display: flex;
+    justify-content: space-between;
+    color: var(--orange);
+    font-size: large;
 }
 
 .menu-toggle {
-    display: none; /* Hide the toggle button by default on larger screens */
+    display: none;
     cursor: pointer;
     padding: 10px;
     background-color: #e6e5e0;
@@ -72,25 +84,31 @@ body {
     margin: 4px 0;
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
+.closeBtn {
+    display: none;
+}
+
+@media screen and (max-width: 1480px) {
     .menu-toggle {
-        display: block; /* Show the toggle button on smaller screens */
+        display: block; 
     }
 
     .sidebar {
-        display: none; /* Hide the sidebar by default on smaller screens */
+        display: none;
+        transition: width 0.3 ease;
     }
 
-    /* Styles to show the sidebar when the toggle button is clicked */
     .sidebar.show {
         display: block;
         width: 100%;
         max-width: none;
     }
-}
 
-.content {
-    margin-right: 280px;
-   
+    .sidebar.close {
+        display: none;
+    }
+    
+    .closeBtn {
+        display: block;
+    }
 }
