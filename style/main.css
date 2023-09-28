@@ -14,8 +14,23 @@ body {
     font-size: small !important;
 }
 
+#header {
+    display: flex !important;
+    justify-content: space-between !important;
+
+}
+
 #navbar {
     background-color: #e6e5e0 !important;
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: 550px; /* Adjust the margin as needed */
 }
 
 #selection {
@@ -35,6 +50,7 @@ body {
     background-color: #e6e5e0; 
     padding: 20px;
     transition: width 0.3 ease;
+    margin-top: 130px;
 }
 
 .menu-item {
@@ -67,6 +83,10 @@ body {
     font-size: large;
 }
 
+.menu-title:hover {
+    background-color: #e69e8e;
+}
+
 .menu-toggle {
     display: none;
     cursor: pointer;
@@ -96,6 +116,7 @@ body {
     .sidebar {
         display: none;
         transition: width 0.3 ease;
+        margin-top: 1px;
     }
 
     .sidebar.show {
