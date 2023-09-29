@@ -46,7 +46,7 @@ fetch(url)
 
     //trigger after a page has been loaded
     window.onload = function () {
-        getWeather( 'Paris' );
+        getWeather( 'Saint-Etienne' );
     }
 
  

@@ -14,6 +14,8 @@ body {
     font-size: small !important;
 }
 
+
+
 #header {
     display: flex !important;
     justify-content: space-between !important;
@@ -41,13 +43,25 @@ body {
     color: var(--orange);
 }
 
+.card {
+    transition: transform 0.2s;
+}
+
+.card.highlighted {
+    transform: scale(1.1);
+}
+
+.card.greyed-out {
+    opacity: 0.5;
+}
+
 /* Aside */
 .sidebar {
     position: fixed;
     top: 0;
     right: 0;
     width: 330px;
-    background-color: #e6e5e0; 
+    background-color: transparent; 
     padding: 20px;
     transition: width 0.3 ease;
     margin-top: 130px;
@@ -111,7 +125,6 @@ body {
 #img_hover {
     background: #fff;
 }
-
 
 @media screen and (max-width: 1480px) {
     .menu-toggle {

@@ -42,4 +42,20 @@ titleElements.forEach((titleElement) => {
   });
 });
 
+$(document).ready(function () {
+  $(".card").hover(
+      function () {
+          $(this).addClass("highlighted");
+          
+          $(".card").not(this).addClass("greyed-out");
+      },
+      function () {
+          $(this).removeClass("highlighted");
+          
+          $(".card").not(this).removeClass("greyed-out");
+      }
+  );
+});
+
+
 
