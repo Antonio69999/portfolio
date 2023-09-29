@@ -108,6 +108,11 @@ body {
     display: none;
 }
 
+#img_hover {
+    background: #fff;
+}
+
+
 @media screen and (max-width: 1480px) {
     .menu-toggle {
         display: block; 

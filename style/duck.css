@@ -10,6 +10,7 @@
     background-size: calc(var(--w) * var(--m)) calc(var(--h) * var(--m)) !important;
     background-repeat: no-repeat !important;
     image-rendering: pixelated;
+    z-index: 999;
 }
 
 .duck,
@@ -24,6 +25,7 @@
     height: calc(var(--h) * var(--m));
     --color: #fff;
     --dark-yellow: #fcc85b;
+    z-index: 999;
 }
 
 .body {
