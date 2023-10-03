@@ -135,6 +135,8 @@ body {
         display: none;
         transition: width 0.3 ease;
         margin-top: 1px;
+        background-color: #e6e5e0; 
+
     }
 
     .sidebar.show {
