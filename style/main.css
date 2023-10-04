@@ -14,12 +14,14 @@ body {
     font-size: small !important;
 }
 
-
-
 #header {
     display: flex !important;
     justify-content: space-between !important;
+}
 
+.profilpic {
+    border-radius: 55%;
+    border: 5px solid var(--orange);
 }
 
 #navbar {
@@ -32,7 +34,7 @@ body {
 }
 
 .navbar-brand {
-    margin-right: 550px; /* Adjust the margin as needed */
+    margin-right: 550px; 
 }
 
 #selection {
