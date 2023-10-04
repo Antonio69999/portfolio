@@ -14,28 +14,23 @@ body {
     font-size: small !important;
 }
 
-#header {
-    display: flex !important;
-    justify-content: space-between !important;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; /* Optional: Add padding for spacing */
 }
 
-.profilpic {
-    border-radius: 55%;
+.navbar div {
+    flex: 1; /* Each div takes up equal space */
+    text-align: center; /* Center align content within div */
+}
+
+
+#profilpic {
+    border-radius: 60%;
     border: 5px solid var(--orange);
 }
 
-#navbar {
-    background-color: #e6e5e0 !important;
-}
-
-.navbar-brand-container {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-brand {
-    margin-right: 550px; 
-}
 
 #selection {
     color: var(--orange);
@@ -47,6 +42,8 @@ body {
 
 .card {
     transition: transform 0.2s;
+    background-color: transparent;
+    border: 1px solid;
 }
 
 .card.highlighted {
@@ -122,10 +119,37 @@ body {
 
 .closeBtn {
     display: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #e6e5e0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    color: #f45f3c;
+}
+
+.closeBtn.show {
+    display: block;
 }
 
 #img_hover {
     background: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1c1c1e !important;
+        color: #fefefe !important;
+    }
+
+    a {
+        color: #f45f3c !important;
+    }
+
+    p.card-text {
+        color: #fefefe;
+    }
 }
 
 @media screen and (max-width: 1480px) {
@@ -153,5 +177,9 @@ body {
     
     .closeBtn {
         display: block;
+    }
+
+    #profilpic {
+        display: none;
     }
 }

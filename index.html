@@ -14,17 +14,17 @@
 
 <body>
     <!-- Header -->
-    <header class="d-flex">
-        <nav class="navbar bg-body-tertiary" id="navbar">
-            <div class="container-fluid my-4" id="header">
-                <span class="navbar-brand mb-0 h1">Hello</span>
-                <span class="navbar-brand mb-0 h1">Welcome on my Portfolio</span>
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="d-flex justify-content-between align-items-center">
+                <span>Hello</span>
+                <span>Welcome on my Portfolio</span>
+                <span><img id="profilpic" src="./assets/images/profilpic.jpg" alt="me_pic" width="100px"></span>
             </div>
         </nav>
-        <img class="profilpic" src="./assets/images/profilpic.jpg" alt="me_pic" width="100px">
     </header>
-
-
+    
+    
     <!-- Should be forbiden :/ -->
     <div class="space">
         <span>&#x200b;</span>
@@ -65,7 +65,7 @@
 
         <div class="title"></div>
         <div class="container mt-3">
-            <h3 class="text-left" id="selection">Selection de projets</h3>
+            <h5 class="text-left" id="selection">SELECTED PROJECTS</h5>
             <div class="row">
                 <div class="col-lg-5 mt-4">
                     <div class="card" style="width:100%;">
@@ -117,7 +117,7 @@
                                 src="./assets/images/instagram.png" alt="Card image" style="width:100%" id="card3"></a>
                         <div class="card-body">
                             <h4 class="card-title" id="card_title">Instagram</h4>
-                            <p class="card-text">OOP based on the video game The Binding Of Isaac</p>
+                            <p class="card-text">Small clone of the well know Instagram app</p>
                             <div class="text-center">
                                 <a href="https://max-ant.projets.garage404.com/" class="btn btn"
                                     id="link-btn">4</a>
@@ -127,8 +127,25 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col-lg-5 mt-4">
+                    <div class="card" style="width:100%;">
+                        <a href="https://antoine-amayas-mael.projets.garage404.com/html/index.php"><img class="card-img-top"
+                                src="./assets/images/lavande.png" alt="Card image" style="width:100%" id="card3"></a>
+                        <div class="card-body">
+                            <h4 class="card-title" id="card_title">Compar'Operator</h4>
+                            <p class="card-text">OOP website</p>
+                            <div class="text-center">
+                                <a href="https://antoine-amayas-mael.projets.garage404.com/html/index.php" class="btn btn"
+                                    id="link-btn">5</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
                 <!-- Navigation Menu -->
-                <div class="menu-toggle">
+                <div class="menu-toggle" id="closeBtn">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -145,10 +162,10 @@
                             <h4 class="menu-title">Skills <span class="menu-plus" id="plus">+</span>
                             </h4>
 
-                            <p class="menu-content">HTML/CSS</p>
+                            <p class="menu-content"><a href="https://symfony.com/">SYMFONY</a></p>
                             <p class="menu-content"><a href="https://www.php.net/">PHP</a></p>
                             <p class="menu-content">JS</p>
-                            <p class="menu-content"><a href="https://symfony.com/">SYMFONY</a></p>
+                            <p class="menu-content">HTML/CSS</p>
 
                         </div>
                         <div class="menu-item">
@@ -162,8 +179,10 @@
                             <p class="menu-content"><a href="https://github.com/Antonio69999">Github</a></p>
                             <p class="menu-content"><a href="https://www.linkedin.com/in/antoine-chabeauti-888836230/">Linkedin</a></p>
                         </div>
+                        <div class="closeBtn">
+                            <span class="">X</span>
+                        </div>
                 </aside>
-
                 <footer style="white-space: nowrap;">
                     <p style="display: inline;"> Made with love form </p>
                     <p id="location" style="display: inline;"></p>
