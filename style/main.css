@@ -25,7 +25,6 @@ body {
     text-align: center; /* Center align content within div */
 }
 
-
 #profilpic {
     border-radius: 60%;
     border: 5px solid var(--orange);
@@ -36,6 +35,11 @@ body {
     transition: transform 0.4s;
 }
 
+#cv {
+    background-color: var(--orange);
+    border: none;
+    color:#fff
+}
 
 #selection {
     color: var(--orange);
