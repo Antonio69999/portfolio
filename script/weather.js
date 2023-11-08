@@ -1,4 +1,4 @@
-
+    
 const url = 'http://api.openweathermap.org/data/2.5/weather?q=Paris&appid=c2a4b7a2d329cfb9121dc9a8cf0ed9ec&units=metric';
 
 fetch(url)
