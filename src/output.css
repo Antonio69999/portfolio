@@ -661,7 +661,7 @@ video {
 }
 
 body {
-  background: #eadfda;
+  background: #f7ede9;
 }
 
 @font-face {
@@ -730,14 +730,18 @@ body {
 }
 
 .sidebar {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
   position: fixed;
   left: 0;
   top: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 30px;
+  /* Add some padding at the top and bottom */
 }
 
 .sidebar > * {
@@ -750,8 +754,10 @@ body {
 }
 
 .social-media img {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   /* Adjust as needed */
+  transform: rotate(90deg);
+  width: 30px;
 }
 
 @media (min-width: 768px) {
