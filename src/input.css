@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #eadfda;
+}
+
+@font-face {
+  font-family: "Grandslang roman";
+  src: url(../assets/fonts/GrandSlang-Roman.ttf) format("truetype"),
+    url(../assets/fonts/GrandSlang-Roman.woff) format("woff"),
+    url(../assets/fonts/GrandSlang-Roman.woff2) format("woff2");
+}
+
+.noise {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.02;
+  pointer-events: none;
+  background: url("../assets/images/noise.gif");
+}
+
+.header {
+  font-family: "Grandslang roman";
+  font-size: 20px;
+}
+
+.header a {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+}
+
+.header a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.header a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.first-section {
+  position: relative;
+  z-index: 2;
+  font-family: "Grandslang roman";
+}
+
+.title:hover {
+  font-style: italic;
+}
+
+.about-me {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar > * {
+  transform: rotate(180deg);
+}
+
+.year {
+  writing-mode: vertical-rl;
+  text-orientation: sideways-right;
+}
+
+.social-media img {
+  margin-bottom: 20px; /* Adjust as needed */
+}
