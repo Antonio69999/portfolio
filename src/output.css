@@ -836,11 +836,18 @@ body {
 
 .vl {
   border-left: 1px solid black;
+  /* height: clamp(1px, 250px, 500px); */
   height: 500px;
 }
 
 .group:hover .group-hover\:bg-opacity-60 {
   --tw-bg-opacity: 0.6;
+}
+
+@media (min-width: 640px) {
+  .sm\:p-2 {
+    padding: 0.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -862,5 +869,21 @@ body {
 
   .md\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .md\:p-14 {
+    padding: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:p-16 {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:p-20 {
+    padding: 5rem;
   }
 }

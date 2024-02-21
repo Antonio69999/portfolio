@@ -105,5 +105,6 @@ body {
 
 .vl {
   border-left: 1px solid black;
+  /* height: clamp(1px, 250px, 500px); */
   height: 500px;
 }
