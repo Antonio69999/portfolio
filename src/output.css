@@ -820,6 +820,7 @@ body {
   align-items: center;
   padding: 30px;
   /* Add some padding at the top and bottom */
+  z-index: 1000;
 }
 
 .sidebar > * {
