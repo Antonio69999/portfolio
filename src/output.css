@@ -577,12 +577,12 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
 .ml-auto {
   margin-left: auto;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
 }
 
 .flex {
@@ -699,11 +699,6 @@ video {
   line-height: 2rem;
 }
 
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -749,7 +744,7 @@ video {
 
 html,
 body {
-  background: #eaddd8;
+  background: #ece7e1;
   height: 100%;
   scroll-behavior: smooth;
 }
@@ -854,7 +849,7 @@ body {
 
 .vl {
   border-left: 1px solid black;
-  /* height: clamp(1px, 250px, 500px); */
+  height: clamp(1px, 250px, 500px);
   height: 500px;
 }
 
@@ -893,6 +888,14 @@ button:hover::after {
   opacity: 1;
 }
 
+@media screen and (max-width: 600px) {
+  .vl {
+    height: 0px;
+    display: none;
+    border-left: 0px solid rgb(255, 255, 255);
+  }
+}
+
 .group:hover .group-hover\:bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
@@ -902,10 +905,6 @@ button:hover::after {
 }
 
 @media (min-width: 640px) {
-  .sm\:p-2 {
-    padding: 0.5rem;
-  }
-
   .sm\:p-14 {
     padding: 3.5rem;
   }
@@ -937,10 +936,6 @@ button:hover::after {
     flex-direction: row-reverse;
   }
 
-  .md\:p-14 {
-    padding: 3.5rem;
-  }
-
   .md\:p-16 {
     padding: 4rem;
   }
@@ -952,10 +947,6 @@ button:hover::after {
 }
 
 @media (min-width: 1024px) {
-  .lg\:p-16 {
-    padding: 4rem;
-  }
-
   .lg\:p-20 {
     padding: 5rem;
   }
@@ -967,10 +958,6 @@ button:hover::after {
 }
 
 @media (min-width: 1280px) {
-  .xl\:p-20 {
-    padding: 5rem;
-  }
-
   .xl\:p-24 {
     padding: 6rem;
   }
