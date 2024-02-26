@@ -143,3 +143,9 @@ button:hover::before {
 button:hover::after {
   opacity: 1;
 }
+
+@media screen and (max-width: 600px) {
+  .vl {
+    display: none;
+  }
+}
