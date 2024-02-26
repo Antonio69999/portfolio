@@ -1,230 +1,201 @@
 <!DOCTYPE html>
 <html lang="fr en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio that put in the foreground my project made during my trainning course">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/clock.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio that put in the foreground my project made during my trainning course"
+    />
+    <link href="./src/output.css" rel="stylesheet" />
     <title>Antoine's Web Developper Portfolio</title>
-</head>
+  </head>
 
-<body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar" id="navbar">
-            <div class="d-flex justify-content-between align-items-center">
-                <span>Hello</span>
-                <span>Antoine Chabeauti - Web Developper Portfolio</span>
-                <span><img id="profilpic" src="./assets/images/profil_pic.jpg" alt="me_pic" width="100px"></span>
-            </div>
-        </nav>
+  <body>
+    <!-- BACKGROUND -->
+    <div class="noise"></div>
+
+    <!-- HEADEr -->
+    <header class="header">
+      <div class="relative h-32 w-full">
+        <div class="absolute top-0 right-16 h-28 w-16">
+          <ul class="py-5">
+            <li class="mb-3"><a href="#top">Acceuil</a></li>
+            <li class="mb-3"><a href="#about">About</a></li>
+            <li class="mb-3"><a href="#works">Works</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
+    <!-- ASIDE -->
 
-    <!-- Should be forbiden :/ -->
-    <div class="space">
-        <span>&#x200b;</span>
-    </div>
+    <aside class="sidebar">
+      <div class="social-media">
+        <a
+          href="https://www.linkedin.com/in/antoine-chabeauti-888836230/"
+          target="_blank"
+        >
+          <img src="./assets/images/linkedin.svg" alt="Linkedin" />
+        </a>
+        <a href="https://github.com/Antonio69999" target="_blank"
+          ><img src="./assets/images/git.svg" alt="Github" />
+        </a>
+      </div>
+      <div class="vl"></div>
+      <div class="year">© / 2024</div>
+    </aside>
 
-    <!-- Portfolio -->
-    <section id="portfolio">
+    <!-- first section -->
 
-        <div class="title"></div>
-        <div class="container mt-3">
-            <h5 class="text-left" id="selection">SELECTED PROJECTS</h5>
-            <!-- First ROW -->
-            <div class="row">
-                <div class="col-lg-5 mt-4">
-                    <div class="card" style="width:100%;">
-                        <a href="https://antoine-mountain.projets.garage404.com/" target="_blank"><img
-                                class="card-img-top" src="./assets/images/moutain.PNG" alt="Card image"
-                                style="width:100%" id="card1"></a>
-                        <div class="card-body">
-                            <h4 class="card-title" id="card_title">Integration</h4>
-                            <p class="card-text">Web integration</p>
-                            <div class="text-center">
-                                <a href="https://antoine-mountain.projets.garage404.com/" class="btn btn"
-                                    id="link-btn">1</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 mt-4">
-                    <div class="card" style="width:100%;">
-                        <a href="http://antoine-luxruy.projets.garage404.com/" target="_blank"><img class="card-img-top"
-                                src="./assets/images/luxury.png" alt="Card image" style="width:100%" id="card3"></a>
-                        <div class="card-body">
-                            <h4 class="card-title" id="card_title">Luxury Service</h4>
-                            <p class="card-text">A two weeks symfony project</p>
-                            <div class="text-center">
-                                <a href="http://antoine-luxruy.projets.garage404.com/" class="btn btn"
-                                    id="link-btn">2</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="first-section py-3 z-10 font-serif">
+      <div
+        class="flex flex-col md:flex-row items-center max-w-6xl px-6 py-8 mx-auto"
+      >
+        <div class="w-full md:w-1/2 py-8">
+          <h1
+            class="text-black-900 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold leading-none tracking-tighter"
+            data-text="Welcome to My Portfolio, I am Web Developer."
+          >
+            Welcome to <br /><span class="title text-blue-700"
+              >My Portfolio, <br
+            /></span>
+            I am Web Developer.
+          </h1>
+        </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row-reverse items-center max-w-6xl px-6 py-8 mx-auto"
+      >
+        <div class="w-full md:w-1/2 py-8">
+          <h2
+            class="text-black-900 font-semibold text-2xl leading-none tracking-tighter pb-4"
+          >
+            Antoine Chabeauti
+          </h2>
+          <p class="about-me pb-5">
+            Web Developer Junior / Symfony / PHP / React Native / React Redux /
+            WordPress
+          </p>
+          <p class="about-me">Download my CV !</p>
+          <a href="./assets/ CV.pdf" download="CV">
+            <button class="download">My CV</button>
+          </a>
+        </div>
+      </div>
+    </section>
 
-            <!-- Second ROW -->
+    <!-- ABOUT -->
+    <section class="about-section py-3" id="about">
+      <div
+        class="flex flex-col md:flex-row items-center max-w-6xl px-6 py-8 mx-auto"
+      >
+        <div class="w-full md:w-1/2 py-8">
+          <h2
+            class="text-black-900 font-semibold text-2xl leading-none tracking-tighter pb-4"
+          >
+            About Me
+          </h2>
+          <p class="about-me">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            aliquet, nisl eget efficitur ultrices, nunc nunc ultrices velit,
+            vitae tincidunt nisl nunc in nunc. Sed id semper nunc. Nullam
+            aliquet, nisl eget efficitur ultrices, nunc nunc ultrices velit,
+            vitae tincidunt nisl nunc in nunc. Sed id semper nunc.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 py-8 ml-auto">
+          <img src="./assets/images/transhuman.png" alt="Profile Image" />
+        </div>
+      </div>
+    </section>
 
-            <div class="row">
-                <div class="col-lg-5 mt-4">
-                    <div class="card" style="width:100%;">
-                        <a href="https://antoine-combat.projets.garage404.com/" target="_blank"><img
-                                class="card-img-top" src="./assets/images/isaac.png" alt="Card image" style="width:100%"
-                                id="card3"></a>
-                        <div class="card-body">
-                            <h4 class="card-title" id="card_title">Combat</h4>
-                            <p class="card-text">OOP based on the video game The Binding Of Isaac</p>
-                            <div class="text-center">
-                                <a href="https://antoine-combat.projets.garage404.com/" class="btn btn"
-                                    id="link-btn">3</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-5 mt-4">
-                    <div class="card" style="width:100%;">
-                        <a href="https://max-ant.projets.garage404.com/" target="_blank"><img class="card-img-top"
-                                src="./assets/images/instagram.png" alt="Card image" style="width:100%" id="card3"></a>
-                        <div class="card-body">
-                            <h4 class="card-title" id="card_title">Instagram</h4>
-                            <p class="card-text">Small clone of the well know Instagram app</p>
-                            <div class="text-center">
-                                <a href="https://max-ant.projets.garage404.com/" class="btn btn" id="link-btn">4</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Third ROW -->
-
-            <div class="row">
-                <div class="col-lg-5 mt-4">
-                    <div class="card" style="width:100%;">
-                        <a href="https://antoine-amayas-mael.projets.garage404.com/html/index.php" target="_blank"><img
-                                class="card-img-top" src="./assets/images/lavande.png" alt="Card image"
-                                style="width:100%" id="card3"></a>
-                        <div class="card-body">
-                            <h4 class="card-title" id="card_title">Compar'Operator</h4>
-                            <p class="card-text">OOP website</p>
-                            <div class="text-center">
-                                <a href="https://antoine-amayas-mael.projets.garage404.com/html/index.php"
-                                    class="btn btn" id="link-btn">5</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 mt-4">
-                    <div class="card" style="width:100%;">
-                        <a href="https://antoine-zoo.projets.garage404.com/" target="_blank"><img class="card-img-top"
-                                src="./assets/images/zoo.png" alt="Card image" style="width:100%" id="card2"></a>
-                        <div class="card-body">
-                            <h4 class="card-title" id="card_title">Zoo</h4>
-                            <p class="card-text">Small zoo made with OOP</p>
-                            <div class="text-center">
-                                <a href="https://antoine-zoo.projets.garage404.com/" class="btn btn" id="link-btn">6</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Fourth ROW -->
-
-            <div class="row">
-                <div class="col-lg-5 mt-4">
-                    <div class="card" style="width:100%;">
-                        <a href="https://adm-festival.projets.garage404.com/" target="_blank"><img class="card-img-top"
-                                src="./assets/images/FestArouf.png" alt="Card image" style="width:100%" id="card3"></a>
-                        <div class="card-body">
-                            <h4 class="card-title" id="card_title">FestArouf</h4>
-                            <p class="card-text">Wordpress + Elementor</p>
-                            <div class="text-center">
-                                <a href="https://adm-festival.projets.garage404.com/" class="btn btn" id="link-btn">7</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Navigation Menu -->
-                <div class="menu-toggle" id="closeBtn">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-
-                <!-- Aside -->
-                <!-- <div class="wrapper"> -->
-                <aside class="sidebar">
-                    <div class="menu-item">
-                        <h4 class="menu-title">About Me<span class="menu-plus" id="plus">+</span></h4>
-                        <p class="menu-content">Hi, my name is Antoine. I'm a junior web developer, I've learned several
-                            programming languages and framework
-                            such as Symfony, HTML/CSS, JavaScript, PHP Vanilla, WordPress.
-                            I'm eager to continue learning and mastering new ones
-                            to further enhance my skills and create amazing web applications.
-                            I'm passionate about computer science since my early years,
-                            and that passion has grown stronger as I continue to explore this fascinating field.
-                        </p>
-                        <a href="./assets/images/cv.jpg" download="Antoine_CV.jpg">
-                            <button class="menu-content" id="cv">
-                                Download My CV !
-                            </button>
-                        </a>
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="menu-title">Skills <span class="menu-plus" id="plus">+</span>
-                        </h4>
-
-                        <p class="menu-content"><a href="https://symfony.com/">SYMFONY</a></p>
-                        <p class="menu-content"><a href="https://www.php.net/">PHP</a></p>
-                        <p class="menu-content">JS</p>
-                        <p class="menu-content">HTML/CSS</p>
-
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="menu-title">Contact <span class="menu-plus" id="plus">+</span></h4>
-                        <p class="menu-content">Get in touch with me</p>
-                        <p class="menu-content">Email : <a
-                                href="mailto:antoine.chabeauti@gmail.com">antoine.chabeauti@gmail.com</a></p>
-                    </div>
-                    <div class="menu-item">
-                        <h4 class="menu-title">Follow <span class="menu-plus" id="plus">+</span></h4>
-                        <p class="menu-content"><a href="https://github.com/Antonio69999">Github</a></p>
-                        <p class="menu-content"><a
-                                href="https://www.linkedin.com/in/antoine-chabeauti-888836230/">Linkedin</a></p>
-                    </div>
-                    <div class="closeBtn">
-                        <span class="">X</span>
-                    </div>
-                </aside>
-                <footer style="white-space: nowrap;">
-                    <p style="display: inline;"> Made with love form</p>
-                    <p id="location" style="display: inline;"></p>
-                    <p id="temp" style="display: inline;"></p>
-                    <p style="display: inline;"></p>
-                    <div id="description" style="display: inline;"></div>
-                    <div id="clock" style="display: inline;">8:10:45</div>
-                </footer>
-
-
-                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                <script src="./script/main.js"></script>
-                <script src="./script/weather.js"></script>
-                <script src="./script/clock.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-                    crossorigin="anonymous">
-                    </script>
-</body>
-
+    <!-- WORKS -->
+    <section id="works" class="p-2 sm:p-14 md:p-16 lg:p-20 xl:p-24">
+      <h2
+        id="works-title"
+        class="text-black-900 font-semibold text-2xl leading-none tracking-tighter pb-4 text-right mr-10"
+      >
+        Selected Works
+      </h2>
+      <div class="flex flex-col md:grid md:grid-cols-3 gap-3">
+        <div class="relative rounded overflow-hidden group">
+          <a href="https://carottecake.com" target="_blank">
+            <img
+              src="./assets/images/projets/caroline.png"
+              alt="Carotte Marcellier"
+              class="w-full h-full"
+            />
+            <p
+              class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition opacity-0 group-hover:opacity-100"
+            >
+              Caroline Marcellier
+            </p>
+          </a>
+        </div>
+        <div class="relative rounded overflow-hidden group">
+          <a
+            href="https://antoine-luxruy.projets.garage404.com"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/projets/luxury.png"
+              alt="Luxury Service"
+              class="w-full h-full"
+            />
+            <p
+              class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition opacity-0 group-hover:opacity-100"
+            >
+              Luxury Services
+            </p>
+          </a>
+        </div>
+        <div class="relative rounded overflow-hidden group">
+          <a
+            href="https://antoine-combat.projets.garage404.com/"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/projets/isaac.jpeg"
+              alt="TP combat Isaac"
+              class="w-full h-full"
+            />
+            <p
+              class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition opacity-0 group-hover:opacity-100"
+            >
+              Isaac
+            </p>
+          </a>
+        </div>
+        <div class="relative rounded overflow-hidden group">
+          <a href="https://max-ant.projets.garage404.com/" target="_blank">
+            <img
+              src="./assets/images/projets/instagram.png"
+              alt="clone instagram"
+              class="w-full h-full"
+            />
+            <p
+              class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition opacity-0 group-hover:opacity-100"
+            >
+              Clone Instagram
+            </p>
+          </a>
+        </div>
+        <div class="relative rounded overflow-hidden group">
+          <a href="https://adm-festival.projets.garage404.com/" target="_blank">
+            <img
+              src="./assets/images/projets/festa.png"
+              alt="Metal Planters"
+              class="w-full h-full"
+            />
+            <p
+              class="cursor-pointer absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-2xl text-center text-white font-roboto font-medium group-hover:bg-opacity-60 transition opacity-0 group-hover:opacity-100"
+            >
+              Festival Project
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
